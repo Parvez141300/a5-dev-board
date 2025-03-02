@@ -5,7 +5,3 @@ function generateColor() {
     return randomColorCodes;
 }
 
-//different cards title 
-function cardTitle(id){
-    
-}
