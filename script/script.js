@@ -41,8 +41,8 @@ ${day} ${month} ${year}`;
 //task assigned decremental and button disable and alert
 const taskAssigned = document.getElementById('task-assigned');
 const navCounter = document.getElementById('nav-counter');
-let count = 6;
-let count2 = 23;
+let count = parseInt(taskAssigned.innerText);
+let count2 = parseInt(navCounter.innerText);
 
 const completedButtons = document.querySelectorAll('.completed-btn');
 for (const completedButton of completedButtons) {
