@@ -31,12 +31,6 @@ document.getElementById('dayName-wise-date').innerHTML = `
 ${month} ${day} ${year}
 `;
 
-//bg wise date 3 march 2025
-const bgDateWise = document.querySelectorAll('.bd-wise-date');
-for (const bgDW of bgDateWise) {
-    bgDW.innerHTML = `
-${day} ${month} ${year}`;
-};
 
 //task assigned decremental and button disable and alert
 const taskAssigned = document.getElementById('task-assigned');
@@ -75,20 +69,10 @@ for (const completedButton of completedButtons) {
         }
         if (count == 0) {
             alert('Congrats! you have completed all the task');
-            const p = document.createElement('p');
-            p.innerText = `Congrats! you have completed all the task at  ${time}`;
-            p.classList.add('bg-[#F4F7FF]', 'rounded-lg', 'p-2', 'mb-2', 'notification-text')
-            const div = document.getElementById('history');
-            div.appendChild(p);
         }
     })
 }
 
-//clear history
-// document.getElementById('history-btn').addEventListener('click', function () {
-//     document.querySelector('.notification-text').classList.add('hidden');
-//     document.querySelectorAll('.notification-text').classList.add('hidden');
-// });
 
 //clear history
 document.getElementById('history-btn').addEventListener('click', function () {
