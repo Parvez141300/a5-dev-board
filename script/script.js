@@ -6,7 +6,7 @@ document.getElementById('random-color').addEventListener('click', function () {
 
 //redirect to blog page
 document.getElementById('discover-something').addEventListener('click', function () {
-    window.location.href = './blog.html';
+    window.location.href = 'blog.html';
 });
 
 //date and time 12 hour format
